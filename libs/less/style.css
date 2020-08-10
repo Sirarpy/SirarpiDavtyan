@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Fjalla";
+  src: url("../fonts/Fjalla_One/FjallaOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Josefin";
+  src: url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf");
+}
+body {
+  box-sizing: border-box;
+  font-family: "Fjalla";
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+.forName {
+  min-height: 625px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forContent {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+}
+section.name {
+  min-height: 625px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  font-size: 150px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+section.name .name-anim {
+  min-height: 625px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+section.name p {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 20px;
+  font-size: 16px;
+}
+section.main {
+  display: flex;
+  align-items: center;
+  height: auto;
+  border-bottom: 1px solid #2d2b2bcf;
+}
+section.main .left-side {
+  width: 200px;
+  background-color: #fff;
+  color: #000;
+  font-size: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.main .left-side p {
+  transform: rotate(-90deg);
+}
+section.main .right-side {
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  width: calc(100% - 200px);
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+.right-side-about,
+.right-side-portfolio,
+.right-side-skills,
+.right-side-softSkills,
+.right-side-info {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+}
+.right-side-about {
+  flex-direction: column;
+  justify-content: center;
+}
+.right-side-about .about h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.right-side-about .about p {
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.right-side-about .social {
+  margin-top: 20px;
+}
+.right-side-about .social h3 {
+  margin: 30px 0 20px 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.right-side-about .social p {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.right-side-about .social .resume {
+  color: #fff;
+}
+.right-side-about .social .resume i {
+  font-size: 30px;
+}
+.right-side-about .social ul li {
+  display: inline-block;
+  margin-top: 10px;
+}
+.right-side-about .social ul li a {
+  margin-right: 20px;
+}
+.right-side-about .social ul li a img {
+  background-color: #fff;
+  width: 30px;
+  border-radius: 10px;
+}
+.right-side-portfolio {
+  justify-content: space-around;
+}
+.right-side-portfolio ul li {
+  margin-bottom: 20px;
+}
+.right-side-portfolio ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+}
+.right-side-portfolio .portfolio-image img {
+  width: 100%;
+}
+.right-side-skills {
+  justify-content: space-evenly;
+}
+.right-side-skills h3 {
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+.right-side-skills ul li {
+  list-style-type: disc;
+  padding-bottom: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.right-side-softSkills {
+  justify-content: center;
+  position: relative;
+}
+.right-side-softSkills h3 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.right-side-softSkills img {
+  width: 10%;
+  position: absolute;
+  top: -40%;
+  right: 28%;
+}
+.right-side-info a {
+  color: #fff;
+  font-size: 18px;
+  display: block;
+}
