@@ -12,10 +12,13 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+
 <section class="name">
     <h1>S</h1>
     <div class="name-anim" data-aos="fade-left">
-        <h1>sirarpi</h1>
+        <h1>Sirarpi</h1>
+     <canvas id="bg-animation"></canvas> 
+
     </div>
 </section>
 <section class="main">
@@ -116,7 +119,7 @@
     <div class="right-side">
         <div class="right-side-softSkills">
             <div class="skills-front">
-                <h3>Soft Skills</h3>
+                <h3>Soft Skills  <img src="libs/images/woman.png" alt="" data-aos="fade-down-left"> </h3>
                 <ul>
                     <li>Communication</li>
                     <li>Self-Motivation</li>
@@ -127,37 +130,47 @@
                     <li>Adaptability</li>
                     <li>Willingness to learn</li>
                 </ul>
-                
-                <img src="libs/images/woman.png" alt="" data-aos="fade-down-left">
-<!--                zoom-out-down-->
             </div>
         </div>
     </div>
 </section>
 <section class="main">
+<div class="left-side">
     <div class="left-side" data-aos="zoom-out-right">
         <p>useful information and sources</p>
     </div>
+</div>
+    
     <div class="right-side">
         <div class="right-side-info">
             <div class=""
                  data-aos="zoom-out-left"
                  data-aos-duration="3000">
-                <a href="https://javascript.info/">Learn JavaScript </a>
-                <a href="https://reactjs.org/">Learn ReactJs </a>
-                <a href="#">links to the various web pages and youtube </a>
+                <a href="https://www.w3schools.com/">w3schools</a> 
+                <a href="https://javascript.info/">JavaScript </a>
+                <a href="https://reactjs.org/">ReactJs </a>
+                <a href="https://www.hackerrank.com/">HackerRank </a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- <script src="https://use.fontawesome.com/4fbd72ad13.js"></script> -->
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="libs/js/nameAnim.js"></script>
+
 <script>
     AOS.init({
         duration: 2000,
     });
 </script>
+
+
 </body>
 </html>
