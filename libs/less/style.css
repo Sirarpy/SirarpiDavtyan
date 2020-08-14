@@ -20,10 +20,15 @@ li {
   padding: 0;
 }
 .forName {
-  min-height: 625px;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 576px) {
+  .forName {
+    flex-direction: column;
+  }
 }
 .forContent {
   padding: 20px;
@@ -31,7 +36,7 @@ li {
   width: 100%;
 }
 section.name {
-  min-height: 625px;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,8 +47,18 @@ section.name {
   overflow: hidden;
   text-transform: uppercase;
 }
+@media (max-width: 576px) {
+  section.name {
+    flex-direction: column;
+  }
+}
+@media (max-width: 920px) {
+  section.name {
+    font-size: 10vw;
+  }
+}
 section.name .name-anim {
-  min-height: 625px;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,6 +69,14 @@ section.name .name-anim {
   left: 0;
   width: 100%;
 }
+@media (max-width: 576px) {
+  section.name .name-anim {
+    flex-direction: column;
+  }
+}
+section.name .name-anim h1 {
+  z-index: 1;
+}
 section.name p {
   color: #fff;
   position: absolute;
@@ -62,14 +85,25 @@ section.name p {
   bottom: 20px;
   font-size: 16px;
 }
+#bg-animation {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
 section.main {
   display: flex;
   align-items: center;
   height: auto;
   border-bottom: 1px solid #2d2b2bcf;
 }
+@media (max-width: 576px) {
+  section.main {
+    flex-direction: column;
+  }
+}
 section.main .left-side {
-  width: 200px;
+  width: 20%;
   background-color: #fff;
   color: #000;
   font-size: 40px;
@@ -78,112 +112,187 @@ section.main .left-side {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 920px) {
+  section.main .left-side {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  section.main .left-side {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
 section.main .left-side p {
   transform: rotate(-90deg);
+}
+@media (max-width: 576px) {
+  section.main .left-side p {
+    transform: rotate(0deg);
+  }
 }
 section.main .right-side {
   background-color: #000;
   color: #fff;
   height: 100%;
-  width: calc(100% - 200px);
+  width: 80%;
   display: flex;
   align-items: center;
   padding: 50px 0;
 }
-.right-side-about,
-.right-side-portfolio,
-.right-side-skills,
-.right-side-softSkills,
-.right-side-info {
+@media (max-width: 576px) {
+  section.main .right-side {
+    width: 100%;
+  }
+}
+section.main .right-side-about,
+section.main .right-side-portfolio,
+section.main .right-side-skills,
+section.main .right-side-softSkills,
+section.main .right-side-info {
   padding: 20px;
   display: flex;
   width: 100%;
 }
-.right-side-about {
+section.main .right-side-about {
   flex-direction: column;
   justify-content: center;
 }
-.right-side-about .about h2 {
+section.main .right-side-about .about h2 {
   margin-bottom: 20px;
   font-size: 30px;
 }
-.right-side-about .about p {
+section.main .right-side-about .about p {
   line-height: 30px;
   letter-spacing: 1px;
 }
-.right-side-about .social {
+section.main .right-side-about .social {
   margin-top: 20px;
 }
-.right-side-about .social h3 {
+section.main .right-side-about .social h3 {
   margin: 30px 0 20px 0;
   text-transform: uppercase;
   text-decoration: underline;
 }
-.right-side-about .social p {
+section.main .right-side-about .social p {
   margin-bottom: 10px;
   font-style: italic;
 }
-.right-side-about .social .resume {
+section.main .right-side-about .social .resume {
   color: #fff;
 }
-.right-side-about .social .resume i {
+section.main .right-side-about .social .resume i {
   font-size: 30px;
 }
-.right-side-about .social ul li {
+section.main .right-side-about .social ul li {
   display: inline-block;
   margin-top: 10px;
 }
-.right-side-about .social ul li a {
+section.main .right-side-about .social ul li a {
   margin-right: 20px;
 }
-.right-side-about .social ul li a img {
+section.main .right-side-about .social ul li a img {
   background-color: #fff;
   width: 30px;
   border-radius: 10px;
 }
-.right-side-portfolio {
+section.main .right-side-portfolio {
+  display: flex;
+  align-items: center;
   justify-content: space-around;
 }
-.right-side-portfolio ul li {
+section.main .right-side-portfolio ul li {
   margin-bottom: 20px;
 }
-.right-side-portfolio ul li a {
+@media (max-width: 576px) {
+  section.main .right-side-portfolio ul li {
+    margin-bottom: 10px;
+  }
+}
+section.main .right-side-portfolio ul li a {
   text-transform: uppercase;
   color: white;
   font-size: 30px;
 }
-.right-side-portfolio .portfolio-image img {
+@media (max-width: 920px) {
+  section.main .right-side-portfolio ul li a {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 920px) {
+  section.main .right-side-portfolio .portfolio-image {
+    width: 40%;
+  }
+}
+section.main .right-side-portfolio .portfolio-image img {
   width: 100%;
 }
-.right-side-skills {
+section.main .right-side-skills {
   justify-content: space-evenly;
+  display: flex;
 }
-.right-side-skills h3 {
+@media (max-width: 920px) {
+  section.main .right-side-skills {
+    flex-direction: column;
+  }
+  section.main .right-side-skills .skills-front,
+  section.main .right-side-skills .skills-back {
+    margin-left: 20px;
+  }
+}
+section.main .right-side-skills h3 {
   font-size: 30px;
   margin-bottom: 45px;
 }
-.right-side-skills ul li {
+@media (max-width: 920px) {
+  section.main .right-side-skills h3 {
+    font-size: 1.5rem;
+  }
+}
+section.main .right-side-skills ul li {
   list-style-type: disc;
   padding-bottom: 15px;
   font-size: 20px;
   letter-spacing: 1px;
 }
-.right-side-softSkills {
-  justify-content: center;
-  position: relative;
+@media (max-width: 920px) {
+  section.main .right-side-skills ul li {
+    font-size: 1.2rem;
+  }
 }
-.right-side-softSkills h3 {
+section.main .right-side-softSkills {
+  justify-content: center;
+}
+section.main .right-side-softSkills h3 {
   font-size: 50px;
   margin-bottom: 50px;
+  position: relative;
 }
-.right-side-softSkills img {
-  width: 10%;
+@media (max-width: 920px) {
+  section.main .right-side-softSkills h3 {
+    font-size: 2rem;
+  }
+}
+section.main .right-side-softSkills li {
+  padding-bottom: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+section.main .right-side-softSkills img {
+  width: 20%;
   position: absolute;
-  top: -40%;
-  right: 28%;
+  top: -90%;
+  right: 0;
 }
-.right-side-info a {
+@media (max-width: 768px) {
+  section.main .right-side-softSkills img {
+    right: 20%;
+  }
+}
+section.main .right-side-info a {
   color: #fff;
-  font-size: 18px;
   display: block;
+  padding-bottom: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
